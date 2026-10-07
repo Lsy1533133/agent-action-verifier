@@ -1,0 +1,31 @@
+{
+ "tool": "ActionFlowVerifier v1.0 (PHM确定性动作审计)",
+ "date": "2026-09-30 20:28:24",
+ "seed": 20260930,
+ "scenarios": 20000,
+ "tp_intercept": 14000,
+ "fn_miss": 0,
+ "tn_pass": 6000,
+ "fp_false_intercept": 0,
+ "intercept_rate": 1.0,
+ "false_intercept_rate": 0.0,
+ "by_rule": {
+  "R1": 2000,
+  "R2": 2000,
+  "R3": 2000,
+  "R4": 2000,
+  "R5": 2000,
+  "R6": 2000,
+  "R7": 2000
+ },
+ "fn_cases": [],
+ "fp_cases": [],
+ "wall_s": 6.91,
+ "worst_ms": 392.066,
+ "honesty_notes": [
+  "场景为基于公开披露事故类别抽象的合成动作流, 非真实生产流量",
+  "规则为确定性差集校验, 无可学习参数; 固定种子20260930可复现",
+  "对齐监控(打分)与本层(执行拦截)互补, 不替代模型对齐训练"
+ ],
+ "audit_sha256": "5bb03186694a7a90"
+}

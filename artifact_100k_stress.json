@@ -1,0 +1,42 @@
+{
+ "tool": "ActionFlowVerifier v1.0 (PHM确定性动作审计)",
+ "suite": "L1扩展100k",
+ "date": "2026-10-01 10:10:59",
+ "seed": 20261001,
+ "scenarios": 100000,
+ "tp_intercept": 70000,
+ "fn_miss": 0,
+ "tn_pass": 30000,
+ "fp_false_intercept": 0,
+ "intercept_rate": 1.0,
+ "intercept_wilson95_lower": 0.99994512,
+ "pass_correct_rate": 1.0,
+ "pass_correct_wilson95_lower": 0.99987196,
+ "by_rule": {
+  "R1": 10000,
+  "R2": 8000,
+  "R4": 12000,
+  "R3": 10000,
+  "R5": 10000,
+  "R6": 10000,
+  "R7": 10000
+ },
+ "latency_ms": {
+  "p50": 0.019,
+  "p95": 0.1,
+  "p99": 0.132,
+  "p999": 40.173,
+  "mean": 0.165,
+  "max": 450.078
+ },
+ "fn_cases": [],
+ "fp_cases": [],
+ "wall_s": 66.5,
+ "honesty_notes": [
+  "场景为基于公开披露事故类别抽象的合成动作流, 非真实生产流量",
+  "长序列扩展(150~200步)复用v1对抗设计, 种子20261001",
+  "Wilson95下界口径(可解析), 非Clopper-Pearson精确法",
+  "规则为确定性差集校验, 无可学习参数"
+ ],
+ "audit_sha256": "34c413bb5f554830"
+}
